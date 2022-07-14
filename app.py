@@ -13,6 +13,9 @@ CORS(app)
 def predict():
     customer_id = request.args.get('customer_id', type=str)
     customer = get_customer(customer_id)
+    if customer == None:
+        return jsonify({"error": 1})
+
     product_recommended = get_product_recommended(customer_id)
 
     return jsonify({
