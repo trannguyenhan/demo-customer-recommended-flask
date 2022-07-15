@@ -1,0 +1,19 @@
+.base-cardstatistic {
+    background: #ffffff;
+    /* Card */
+  
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .base-cardstatistic .base-cardstatistic-icon {
+  }
+  
+  .base-cardstatistic-content span {
+    font-weight: 600;
+    font-size: 20px;
+    color: #303f9f;
+  }

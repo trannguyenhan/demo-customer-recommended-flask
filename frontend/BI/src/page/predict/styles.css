@@ -1,0 +1,26 @@
+.App {
+    font-family: sans-serif;
+    padding: 0 4rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.8rem;
+    row-gap: 1.2rem;
+  }
+  .chart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .chart .chart-main {
+    width: 60%;
+  }
+  .chart .chart-statistic {
+    width: 40%;
+    margin-left: 3.6rem;
+    row-gap: 1.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
