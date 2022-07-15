@@ -1,12 +1,9 @@
-## Install 
-
-```bash
-pip3 install Flask
-pip3 install flask-cors
-```
-
-## Run
+## Run wih docker
 
 ```
-python3 app.py
+docker-compose up
 ```
+
+## Using
+
+Access `localhost:3000` using service

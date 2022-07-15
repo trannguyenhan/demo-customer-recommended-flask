@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+    backend: 
+        build: .
+        network_mode: host
+
+    frontend: 
+        build: frontend/BI/
+        network_mode: host
