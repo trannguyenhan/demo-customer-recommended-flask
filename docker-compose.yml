@@ -1,9 +1,25 @@
 version: "3.0"
+networks:
+    my_network:
+        driver: bridge
+        
 services:
     backend: 
+        container_name: backend
         build: .
-        network_mode: host
+        networks:
+            - my_network
+        ports:
+            - 5000:5000
 
     frontend: 
+        container_name: frontend
         build: frontend/BI/
-        network_mode: host
+        networks:
+            - my_network
+        ports: 
+            - 3000:3000
+        depends_on:
+            - backend   
+        links:
+            - backend
